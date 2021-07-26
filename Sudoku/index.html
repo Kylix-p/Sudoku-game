@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<div class="head">
+    <h1><strong>Sudoku</strong></h1>
+    <div id="setup-game">
+     <div id="diff">
+     <h3>Choose Difficuilty: </h3>
+       <label><input id="diff-1" type="radio" name="diff" value="easy" checked>Easy</label>
+       <label><input id="diff-2" type="radio" name="diff" value="medium">Medium</label>
+       <label><input id="diff-3" type="radio" name="diff" value="hard">Hard</label>
+    </div>
+    <div id="time">
+     <h3>Choose time: </h3>
+       <label><input id="time-1" type="radio" name="time" value="three" checked>3 Min</label>
+       <label><input id="time-2" type="radio" name="time" value="five">5 Min</label>
+       <label><input id="time-3" type="radio" name="time" value="ten">10 Min</label>
+    </div>
+    <div id="theme">
+     <h3>Choose theme: </h3>
+       <label><input id="theme-1" type="radio" name="theme" value="light" checked>Light</label>
+       <label><input id="theme-2" type="radio" name="theme" value="dark">Dark</label>
+    </div>
+    </div>
+    <button id="start-btn"> New Game</button>
+</div>
+<body>
+    <div id="starts">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+           <p id="one">1</p>
+           <p id="two">2</p>
+           <p id="three">3</p>
+           <p id="four">4</p>
+           <p id="five">5</p>
+           <p id="six">6</p>
+           <p id="seven">7</p>
+           <p id="eight">8</p>
+           <p id="nine">9</p>
+        </div>
+    </div> 
+</body>
+<footer>
+   <span>Created By Eros Team</span> | | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+</footer>
+</html>
